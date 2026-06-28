@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How internet works ?</title>
+</head>
+<body>
+  <h1>How internet works ?</h1>
+  <h2>SIM card:---</h2>
+  <pre>A tiny chip inside your phone that identifies you to a telecom company, like an ID card.
+    It's how Jio/Airtel/Vi know "this phone belongs to this customer." 
+                SIM      Aadhar card       Address    photo
+                             |
+                             |
+                             ^
+                          9341045678                        
+  </pre>
+  
+  <h2>Telecom Company / ISP (Internet Service Provider):---</h2>
+  <pre>A company that owns physical infrastructures (tower,cables,equipment) and sell you access to the internet.
+    Jio, Airtel, Vi, BSNL, ACT Fibernet - these are all ISPs.
+    This is the company you are actually paying when you recharge.
+                          Telecom Company
+                    JIO, AIRTEL, VI, BSNL, VODA, OTHERS
+                          infrastructure
+                      Mobile towers, cables
+  </pre>
+
+  <h2>Mobile tower:---</h2>
+  <pre>those tall metal/antenna structures you see around your city.
+    Your phone talks to the nearest tower wirelessely using radio waves
+    the same basic idea as a walkie-talkie, just far more advanced.
+  </pre>
+
+  <h2>Data:---</h2>
+  <pre>the actual information travelling back and forth: a webpage, a video frame, a whatsapp message.
+    Measured in MB(megabytes) and GB(gigabytes). When your recharge plan say "2GB/day," thats the amount of data
+    you are allowed to send/receive that day before the compaqny slows you down or charges extra.
+  </pre>
+
+  <h2>Recharge:---</h2>
+  <pre>literally a payment to your ISP for a fixed amount of data + calling minutes, valid for a fixed number of days.
+    You are not buying internet out of thin air --- you are paying a real company that owns real physical equipment to let 
+    your phone use their network.
+  </pre>
+
+  <h2>Broadband:---</h2>
+  <pre>a wired (cable/fibre) internet connection straight into your house, instead of going through a mobile tower.
+    Usually used for home wifi.
+  </pre>
+
+  <h2>Router / Modem:---</h2>
+  <pre>the box at home(often with blinking lights) that takes the broadband connection coming into your house
+    and converts it into a WIFI signal your phone/laptop can connect to.
+  </pre>
+
+  <h2>Network:---</h2>
+  <pre>two or more computers connected so they can talk to each other.Your home WIFI is a small network. 
+    Your college's WIFI is a bigger network</pre>
+
+  <h2>4 Types of network:---</h2>
+  <pre>1. PAN
+    2. LAN
+    3. MAN
+    4. WAN
+  </pre>
+
+  <h3>PAN:---</h3>
+  <pre>the smallest possible network, covering just a few meters around one person.
+    Example:- your phone connected to Bluetooth earphones, or a smartwatch synced to your phone.
+  </pre>
+
+  <h3>LAN:---</h3>
+  <pre>devices connected within one limited physical place: one house, one classroom, one office floor, one school building.
+    Example: every phone/laptop connected to your home WIFI router is one LAN.
+    Your school's computer lab, all wired together, is also a LAN.
+    Range: roughly one building, often under 1km.
+  </pre>
+
+  <h3>MAN:---</h3>
+  <pre>multiple LANs connected together across a whole city or a large campus with many buildings.
+    Example: a cable TV company's network covering an entire city;
+    a university connecting its 10 different department buildings together;
+    a city wide public WIFI project
+  </pre>
+
+  <h3>WAN:---</h3>
+  <pre>a network spanning a Huge area: multiple cities, states, countries, or even the entire planet.
+    Example: your ISP's nation wide backbone connecting every city it serves is a WAN 
+  </pre>
+
+  <h2>Client Server Model:---</h2>
+  <h3>Client:---</h3>
+  <pre>the one who asks for something. Your browser (Chrome, Safari, etc) is a client.
+    Your phone's Instagram app is a client.
+  </pre>
+
+  <h3>Server:---</h3>
+  <pre>the one who has the things and send it back. A server is just a powerful computer that sits "always on"
+    waiting for requests, somewhere in a data center.
+  </pre>
+
+  <h3>Request:---</h3>
+  <pre>the message the client sends ("hey, give me the youtube homepage".)
+  </pre>
+
+  <h3>Response:---</h3>
+  <pre>the message the server sends back (the actual HTML/video/data).</pre>
+
+  <h3>IP Address:---</h3>
+  <pre>Internet Protocol Address---> a unique number assigned to every device connected to the internet, 
+    so other devices known where to send data,
+    LOOKS LIKE____ 142.250.183.78
+    <b>Open cmd, type ipconfig</b>
+  </pre>
+
+  <h3>DNS:---</h3>
+  <pre>Domain Name System___ a gaint, distributed phonebook that converts a domain name
+    like( youTube.com) into the actual IP address of the server that owns it.
+  </pre>
+
+  <h3>Domain name:---</h3>
+  <pre>the human-readable website name, like amazon.com</pre>
+
+  <h3>Domain Name Server:---</h3>
+  <pre>a special server whose entire job is to answer the question 
+    "what IP address does this domain point to ?"
+  </pre>
+
+  <h2>Walk through the actual sequence on the board, step by step like a story:</h2>
+  <pre>You type youTube.com and hit Enter.
+    Your browser asks a DNS server: "What's the IP address for youtube.com ?"
+    DNS replies: "It's 142.250.183.78."
+    Now your browser knows exactly which computer on Earth to talk to.
+  </pre>
+
+  <h3>IPv4:---</h3>
+  <pre>Internet Protocol version 4__ numbers(each 0-255) separated by dots, like 142.250.183.78.
+    Because each number is built from 32 binary bits total, IPv4 can only create about
+     4.3 billion unique addresses in total.
+
+     32 bit 
+
+  </pre>
+
+  <h3>IPv6:---</h3>
+  <pre>the newer format built specifically to solve that shortage. It looks completely different
+    longer, and uses letters and colons instead of just dots,
+    like__ 2401.4900.1c20.0000.0000.0000.1a2b
+
+    128 bit Hexadecimal
+  </pre>
+</body>
+</html>
