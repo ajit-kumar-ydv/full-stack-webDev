@@ -1,10 +1,10 @@
 console.log("Hello, Ajit");
-
+/*
 age = 20;
 name = "ajit";
 console.log(name, age);
 
-
+*/
 // var  let  const
 
 // var --- re-declaration and updation both allowed
@@ -31,4 +31,20 @@ console.log(aadhar);
 const aadhar = 57996448; // error
 aadhar = 699070; // error
 */
+
+// Variable naming rule
+let $price = 5000;
+let _crazy = "ajit";
+let age = 19;
+
+let collegeName = "Gaya College";
+let mobileNumber = 9341886800;
+console.log(typeof collegeName);
+console.log(typeof mobileNumber);
+
+const doubleQuote = "Ajit";
+const singleQuote = 'Kumar';
+const templateLiteral = `Software Engineer
+At Microsoft
+`;
 
