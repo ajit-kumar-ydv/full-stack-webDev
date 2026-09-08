@@ -85,7 +85,11 @@ let body = document.querySelector("body")
 h2.remove() // directly on the element you want to remove
 
 
+let clone = productList.cloneNode();
+console.log(clone);
 
+const items = productList.children 
+productList.insertBefore(h2, items);
 
 
 
