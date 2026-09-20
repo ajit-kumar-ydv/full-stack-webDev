@@ -4,7 +4,7 @@ let todos = [
   {
     id: Date.now() +1 ,
     text: "Go to gym",
-    isCompleted: false
+    isCompleted: true
   },
   {
     id: Date.now()+2,
@@ -48,10 +48,11 @@ renderTodo(); // jb first time file execute hogi tb existing todos render ho jay
 
 function addTodo(todo) {
   const li = document.createElement("li") // <li></li>
-  li.className=`flex gap-3 border border-slate-300 p-4 rounded-xl`
+  li.className = `flex gap-3 border border-slate-300 p-4 rounded-xl`
+  li.dataset.id=todo.id
   li.innerHTML =
   `
-      <input data-id=${todo.id} type="checkbox">
+      <input data-id=${todo.id} ${todo.isCompleted === true ? 'checked' : ""} type="checkbox">
       <p class="flex-1">${todo.text}</p>
       <div class="flex gap-2">
         <button data-action="edit" data-id=${todo.id}>Edit</button>
@@ -67,10 +68,12 @@ function addTodo(todo) {
 
 todoList.addEventListener('click', (e) => {
   
+  let li=e.target.closest('li')
   let btn = e.target.closest("button")
   let action = btn?.dataset.action;
-  let id = btn?.dataset?.id
-  
+  let id = li?.dataset?.id
+
+  let checkbox=e.target.closest('input[type="checkbox"]')
    
   if (action === "edit") {
     // edit wala part
@@ -79,6 +82,18 @@ todoList.addEventListener('click', (e) => {
   if (action === "delete") {
     // delete wala part
     deleteTodo(e,id)
+  }
+
+  if (checkbox) {
+    todos = todos.map((todo) => {
+      if (todo.id === Number(id)) {
+        return {
+          ...todo,
+          isCompleted:!todo.isCompleted
+        }
+      }
+      return todo
+    })
   }
 })
 

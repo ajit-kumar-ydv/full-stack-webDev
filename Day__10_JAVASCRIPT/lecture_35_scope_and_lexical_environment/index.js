@@ -47,3 +47,16 @@
 
 // counter()
 // counter()
+
+
+function outer() {
+  let a = 5;
+  function inner() {
+    console.log(a);
+    //let a = 7;
+    //var a=7;
+  }
+  inner()
+}
+
+outer();
