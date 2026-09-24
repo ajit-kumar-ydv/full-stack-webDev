@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo App</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="mx-auto">
+  <div class="bg-slate-700 max-w-md mx-auto">
+    <h1 class="text-center font-extrabold bg-yellow-400 p-5 text-lg">Todo App</h1>
+    <div>
+
+      <form id="todo-form"  class="p-4 flex gap-4 mt-5">
+        <input type="text" class="bg-pink-500 rounded-sm  p-2 flex-1 border border-white"  id="form-input">
+        <button id="form-button" class="bg-green-600 p-2 rounded-sm border border-white">Add</button>
+      </form>
+
+      <div class="pl-4 pr-4 flex gap-4 justify-between border-b-2 border-b-pink-600 mb-2">
+        <p class="text-yellow-300">TASK (0)</p>
+        <p class="text-yellow-300">COMPLETED: 1</p>
+      </div>
+
+
+
+
+      <div>
+        <ul class="p-4" id="todos-ul">
+<!--  -->
+          <!-- <li class="flex gap-2 border border-white p-2 mb-4 rounded-sm" data-id="1"> -->
+            <!-- <input type="checkbox"> -->
+            <!-- <p class="flex-1">GO TO GYM</p> -->
+            <!-- <button class="bg-yellow-400 pl-2 pr-2 rounded-sm">EDIT</button> -->
+            <!-- <button class="bg-pink-400 pl-2 pr-2 rounded-sm">REMOVE</button> -->
+          <!-- </li> -->
+
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+
+  <script src="index.js"></script>
+</body>
+
+</html>
