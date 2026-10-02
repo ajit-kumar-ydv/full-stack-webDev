@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    #container {
+      width: 100%;
+      height: 100vh;
+      background-color: rgb(245, 245, 242);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    #main{
+      user-select: none;
+      background-color: #0d93458b;
+      padding: 15px 30px;
+      font-size: 30px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-weight: bolder;
+      border-radius: 15px;
+      color: rgb(251, 3, 15);
+    }
+    #main:hover{
+      font-size: 32px; ;
+    }
+    input{
+      /* visibility: hidden; */
+      display: none;
+      
+    }
+
+
+  </style>
+</head>
+
+<body>
+  <div id="container">
+    <div id="main">
+      <input type="file" >
+      <div id="fake-input">
+        Upload File
+      </div>
+    </div>
+
+  </div>
+
+
+  <script src="index.js"></script>
+</body>
+
+</html>
