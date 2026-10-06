@@ -17,7 +17,7 @@ async function searchMovie(searchText) {
     movieHouse.innerHTML="<p>Wait data is loading...</p>"
   
   let response = await fetch(
-    `http://www.omdbapi.com/?apikey=eb581004&s=${searchText}`,
+    `http://www.omdbapi.com/?apikey=eb581004&s=${encodeURIComponent(searchText)}`,
   );
   let data = await response.json();
   if (data.Response === "True") {
